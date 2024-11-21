@@ -4,9 +4,8 @@ import pyttsx3
 from PIL import Image
 from dotenv import load_dotenv
 import os
-load_dotenv()  # Load environment variables from .env file
+load_dotenv()
 
-# Retrieve the API key from the environment variable
 api_key = os.getenv("GENAI_API_KEY")
 if not api_key:
     raise ValueError("API key not found! Set the environment variable GENAI_API_KEY.")
